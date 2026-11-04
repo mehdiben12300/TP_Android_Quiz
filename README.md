@@ -1,0 +1,85 @@
+# 📱 QuizImages - Application Android Native
+
+> **Projet Mobile :** Quiz en images sur les formes géométriques  
+> **Étudiant :** Mehdi Benomrane  
+> **Classe :** L3DSI  
+
+---
+
+## 📌 Accès Rapide au Compte Rendu
+
+Le compte rendu complet du projet est disponible dans le dossier [`compte-rendu/`](./compte-rendu/) sous différents formats :
+
+- 📄 **[Compte Rendu au format PDF](./compte-rendu/compte_rendu.pdf)** *(Format officiel prêt à la lecture et à l'impression)*
+- 📝 **[Compte Rendu au format Markdown](./compte-rendu/compte_rendu.md)**
+- 🌐 **[Compte Rendu au format HTML](./compte-rendu/compte_rendu.html)**
+
+---
+
+## 🗂️ Structure du Dépôt et Navigation
+
+```text
+QuizImages/
+├── README.md                           <- Ce fichier de présentation
+├── compte-rendu/
+│   ├── compte_rendu.pdf                <- Compte rendu au format PDF
+│   ├── compte_rendu.md                 <- Compte rendu au format Markdown
+│   └── compte_rendu.html               <- Compte rendu au format HTML
+├── app/
+│   ├── build.gradle.kts                <- Configuration du module app
+│   └── src/
+│       └── main/
+│           ├── AndroidManifest.xml     <- Fichier manifeste de l'application
+│           ├── java/com/example/quizimages/
+│           │   └── MainActivity.kt     <- Code source Kotlin principal (Logique & Quiz)
+│           └── res/
+│               ├── drawable/           <- Ressources d'images vectorielles des formes
+│               │   ├── carre.xml
+│               │   ├── cercle.xml
+│               │   ├── etoile.xml
+│               │   ├── rectangle.xml
+│               │   └── triangle.xml
+│               └── layout/
+│                   └── activity_main.xml <- Layout XML de l'interface utilisateur
+├── build.gradle.kts                    <- Configuration Gradle racine
+└── settings.gradle.kts                 <- Paramètres de projet Gradle
+```
+
+---
+
+## 🛠️ Composition du Projet
+
+| Élément | Emplacement | Description |
+| :--- | :--- | :--- |
+| **Logique Applicative** | [`MainActivity.kt`](./app/src/main/java/com/example/quizimages/MainActivity.kt) | Contient la structure des questions (`Question`), la gestion des événements (`OnClickListener`), le calcul du score et le contrôle de la `ProgressBar`. |
+| **Interface Utilisateur** | [`activity_main.xml`](./app/src/main/res/layout/activity_main.xml) | Layout responsive en `ScrollView` et `LinearLayout` contenant les `TextView`, `ImageView`, `ProgressBar` et `Button`. |
+| **Images des Questions** | [`res/drawable/`](./app/src/main/res/drawable/) | Formes géométriques vectorielles XML (`triangle`, `carre`, `cercle`, `etoile`, `rectangle`). |
+| **Documentation & Rapport** | [`compte-rendu/`](./compte-rendu/) | Dossier contenant les livrables du rapport d'évaluation. |
+
+---
+
+## ✨ Fonctionnalités de l'Application
+
+- ❓ **Questions interactives avec images :** 5 questions illustrées sur les formes géométriques.
+- 🎯 **Calcul du score en temps réel :** Score mis à jour dynamiquement à chaque réponse.
+- 📊 **Suivi de progression :** Barre de progression visuelle (`ProgressBar`) évoluant de 0 à 5.
+- 🔒 **Sécurisation des réponses :** Blocage des boutons après le choix du joueur pour éviter le double clic.
+- 🏆 **Écran de synthèse final :** Affichage du bilan du quiz et possibilité de **Rejouer**.
+
+---
+
+## 🚀 Compilation et Exécution
+
+### Prérequis
+- Android Studio Ladybug ou version plus récente
+- JDK 17
+- Émulateur Android (ou appareil physique avec débogage USB activé)
+
+### Étapes d'exécution
+1. Ouvrir le projet dans **Android Studio**.
+2. Attendre la fin de la synchronisation Gradle (*Gradle Sync*).
+3. Sélectionner la cible d'exécution (ex: `emulator-5554`).
+4. Cliquer sur le bouton **Run** (`Shift + F10`) ou utiliser le CLI Gradle :
+   ```bash
+   ./gradlew assembleDebug
+   ```
