@@ -6,13 +6,20 @@
 
 ---
 
-## 📌 Accès Rapide au Compte Rendu
+## 📌 Accès Rapide au Compte Rendu et Captures
 
-Le compte rendu complet du projet est disponible dans le dossier [`compte-rendu/`](./compte-rendu/) sous différents formats :
-
-- 📄 **[Compte Rendu au format PDF](./compte-rendu/compte_rendu.pdf)** *(Format officiel prêt à la lecture et à l'impression)*
+- 📄 **[Compte Rendu au format PDF](./compte-rendu/compte_rendu.pdf)** *(Format officiel prêt à la lecture)*
 - 📝 **[Compte Rendu au format Markdown](./compte-rendu/compte_rendu.md)**
 - 🌐 **[Compte Rendu au format HTML](./compte-rendu/compte_rendu.html)**
+- 📸 **[Captures d'écran de l'application](./captures/)**
+
+---
+
+## 📸 Captures d'Écran de l'Application
+
+| Question 1 | Question 1 (Réponse) | Résultat Final |
+| :---: | :---: | :---: |
+| ![Question 1](./captures/screen_question1.png) | ![Feedback Q1](./captures/screen_question1_feedback.png) | ![Résultat](./captures/screen_resultat_final.png) |
 
 ---
 
@@ -21,6 +28,14 @@ Le compte rendu complet du projet est disponible dans le dossier [`compte-rendu/
 ```text
 QuizImages/
 ├── README.md                           <- Ce fichier de présentation
+├── captures/                           <- Captures d'écran de l'application
+│   ├── screen_question1.png
+│   ├── screen_question1_feedback.png
+│   ├── screen_question2.png
+│   ├── screen_question3.png
+│   ├── screen_question4.png
+│   ├── screen_question5.png
+│   └── screen_resultat_final.png
 ├── compte-rendu/
 │   ├── compte_rendu.pdf                <- Compte rendu au format PDF
 │   ├── compte_rendu.md                 <- Compte rendu au format Markdown
@@ -34,11 +49,6 @@ QuizImages/
 │           │   └── MainActivity.kt     <- Code source Kotlin principal (Logique & Quiz)
 │           └── res/
 │               ├── drawable/           <- Ressources d'images vectorielles des formes
-│               │   ├── carre.xml
-│               │   ├── cercle.xml
-│               │   ├── etoile.xml
-│               │   ├── rectangle.xml
-│               │   └── triangle.xml
 │               └── layout/
 │                   └── activity_main.xml <- Layout XML de l'interface utilisateur
 ├── build.gradle.kts                    <- Configuration Gradle racine
@@ -54,6 +64,7 @@ QuizImages/
 | **Logique Applicative** | [`MainActivity.kt`](./app/src/main/java/com/example/quizimages/MainActivity.kt) | Contient la structure des questions (`Question`), la gestion des événements (`OnClickListener`), le calcul du score et le contrôle de la `ProgressBar`. |
 | **Interface Utilisateur** | [`activity_main.xml`](./app/src/main/res/layout/activity_main.xml) | Layout responsive en `ScrollView` et `LinearLayout` contenant les `TextView`, `ImageView`, `ProgressBar` et `Button`. |
 | **Images des Questions** | [`res/drawable/`](./app/src/main/res/drawable/) | Formes géométriques vectorielles XML (`triangle`, `carre`, `cercle`, `etoile`, `rectangle`). |
+| **Captures d'écran** | [`captures/`](./captures/) | Captures réelles de l'application en cours d'exécution. |
 | **Documentation & Rapport** | [`compte-rendu/`](./compte-rendu/) | Dossier contenant les livrables du rapport d'évaluation. |
 
 ---
