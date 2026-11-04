@@ -17,9 +17,9 @@
 
 ## 📸 Captures d'Écran de l'Application
 
-| Question 1 | Question 1 (Réponse) | Résultat Final |
-| :---: | :---: | :---: |
-| ![Question 1](./captures/screen_question1.png) | ![Feedback Q1](./captures/screen_question1_feedback.png) | ![Résultat](./captures/screen_resultat_final.png) |
+| Capture 1 | Capture 2 | Capture 3 | Capture 4 |
+| :---: | :---: | :---: | :---: |
+| ![Capture 1](./captures/Screenshot_20261104_213417.png) | ![Capture 2](./captures/Screenshot_20261104_213511.png) | ![Capture 3](./captures/Screenshot_20261104_213530.png) | ![Capture 4](./captures/Screenshot_20261104_213604.png) |
 
 ---
 
@@ -28,14 +28,11 @@
 ```text
 QuizImages/
 ├── README.md                           <- Ce fichier de présentation
-├── captures/                           <- Captures d'écran de l'application
-│   ├── screen_question1.png
-│   ├── screen_question1_feedback.png
-│   ├── screen_question2.png
-│   ├── screen_question3.png
-│   ├── screen_question4.png
-│   ├── screen_question5.png
-│   └── screen_resultat_final.png
+├── captures/                           <- Captures d'écran de l'application (4 photos)
+│   ├── Screenshot_20261104_213417.png
+│   ├── Screenshot_20261104_213511.png
+│   ├── Screenshot_20261104_213530.png
+│   └── Screenshot_20261104_213604.png
 ├── compte-rendu/
 │   ├── compte_rendu.pdf                <- Compte rendu au format PDF
 │   ├── compte_rendu.md                 <- Compte rendu au format Markdown
@@ -64,7 +61,7 @@ QuizImages/
 | **Logique Applicative** | [`MainActivity.kt`](./app/src/main/java/com/example/quizimages/MainActivity.kt) | Contient la structure des questions (`Question`), la gestion des événements (`OnClickListener`), le calcul du score et le contrôle de la `ProgressBar`. |
 | **Interface Utilisateur** | [`activity_main.xml`](./app/src/main/res/layout/activity_main.xml) | Layout responsive en `ScrollView` et `LinearLayout` contenant les `TextView`, `ImageView`, `ProgressBar` et `Button`. |
 | **Images des Questions** | [`res/drawable/`](./app/src/main/res/drawable/) | Formes géométriques vectorielles XML (`triangle`, `carre`, `cercle`, `etoile`, `rectangle`). |
-| **Captures d'écran** | [`captures/`](./captures/) | Captures réelles de l'application en cours d'exécution. |
+| **Captures d'écran** | [`captures/`](./captures/) | Captures d'écran de l'application fournies par l'utilisateur. |
 | **Documentation & Rapport** | [`compte-rendu/`](./compte-rendu/) | Dossier contenant les livrables du rapport d'évaluation. |
 
 ---
@@ -89,7 +86,7 @@ QuizImages/
 ### Étapes d'exécution
 1. Ouvrir le projet dans **Android Studio**.
 2. Attendre la fin de la synchronisation Gradle (*Gradle Sync*).
-3. Sélectionner la cible d'exécution (ex: `emulator-5554`).
+3. Sélectionner la cible d'exécution.
 4. Cliquer sur le bouton **Run** (`Shift + F10`) ou utiliser le CLI Gradle :
    ```bash
    ./gradlew assembleDebug
