@@ -8,9 +8,7 @@
 
 ## 📌 Accès Rapide au Compte Rendu et Captures
 
-- 📄 **[Compte Rendu au format PDF](./compte-rendu/compte_rendu.pdf)** *(Format officiel prêt à la lecture)*
-- 📝 **[Compte Rendu au format Markdown](./compte-rendu/compte_rendu.md)**
-- 🌐 **[Compte Rendu au format HTML](./compte-rendu/compte_rendu.html)**
+- 📄 **[Compte Rendu au format PDF](./compte-rendu/compte_rendu.pdf)** *(Rapport officiel du projet)*
 - 📸 **[Captures d'écran de l'application](./captures/)**
 
 ---
@@ -34,9 +32,7 @@ QuizImages/
 │   ├── Screenshot_20261104_213530.png
 │   └── Screenshot_20261104_213604.png
 ├── compte-rendu/
-│   ├── compte_rendu.pdf                <- Compte rendu au format PDF
-│   ├── compte_rendu.md                 <- Compte rendu au format Markdown
-│   └── compte_rendu.html               <- Compte rendu au format HTML
+│   └── compte_rendu.pdf                <- Compte rendu au format PDF
 ├── app/
 │   ├── build.gradle.kts                <- Configuration du module app
 │   └── src/
@@ -61,8 +57,8 @@ QuizImages/
 | **Logique Applicative** | [`MainActivity.kt`](./app/src/main/java/com/example/quizimages/MainActivity.kt) | Contient la structure des questions (`Question`), la gestion des événements (`OnClickListener`), le calcul du score et le contrôle de la `ProgressBar`. |
 | **Interface Utilisateur** | [`activity_main.xml`](./app/src/main/res/layout/activity_main.xml) | Layout responsive en `ScrollView` et `LinearLayout` contenant les `TextView`, `ImageView`, `ProgressBar` et `Button`. |
 | **Images des Questions** | [`res/drawable/`](./app/src/main/res/drawable/) | Formes géométriques vectorielles XML (`triangle`, `carre`, `cercle`, `etoile`, `rectangle`). |
-| **Captures d'écran** | [`captures/`](./captures/) | Captures d'écran de l'application fournies par l'utilisateur. |
-| **Documentation & Rapport** | [`compte-rendu/`](./compte-rendu/) | Dossier contenant les livrables du rapport d'évaluation. |
+| **Captures d'écran** | [`captures/`](./captures/) | Captures d'écran de l'application. |
+| **Compte Rendu PDF** | [`compte-rendu/compte_rendu.pdf`](./compte-rendu/compte_rendu.pdf) | Rapport complet au format PDF. |
 
 ---
 
